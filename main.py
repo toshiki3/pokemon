@@ -6,11 +6,11 @@ import random
 def main():
     # プレイヤーと敵のポケモンを作成
     player = pl.Player("Player")
-    enemy = poke.Pokemon("カメックス", 50, "みず", 79, 83, 189, 85, 105, 78, [])
+    enemy = poke.Pokemon("カメックス", 50, "みず", 186, 79, 121, 105, 172, 98, [])
 
     # プレイヤーのメガニウムを設定
-    meganium_moves = [mo.Move("のしかかり", "ノーマル", 80), mo.Move("リーフブレード", "くさ", 90), mo.Move("アイアンテール", "はがね", 100),mo.Move("リフレクター","エスパー",-2)]
-    meganium = poke.Pokemon("メガニウム", 50, "くさ", 100, 182, 100, 83, 100, 80, meganium_moves)
+    meganium_moves = [mo.Move("のしかかり", "ノーマル", 80), mo.Move("リーフストーム", "くさ", 130), mo.Move("アイアンテール", "はがね", 100),mo.Move("リフレクター","エスパー",-2)]
+    meganium = poke.Pokemon("メガニウム", 50, "くさ", 187, 78, 167, 103, 121, 100, meganium_moves)
     player.active_pokemon = meganium
 
     # プレイヤーの技を選択
